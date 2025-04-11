@@ -17,9 +17,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: white;  /* default for empty cells */
     }
-    .black { background-color: black; color: white; }
-    .yellow { background-color: yellow; color: black; }
+    .black {
+      background-color: black !important;
+      color: white;
+    }
+    .yellow {
+      background-color: yellow !important;
+      color: black;
+    }
     button {
       width: 100%;
       height: 100%;
@@ -29,6 +36,7 @@
       cursor: pointer;
     }
   </style>
+  
 </head>
 <body>
   <h1>2 Player Board Game</h1>
