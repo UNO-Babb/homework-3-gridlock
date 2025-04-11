@@ -57,7 +57,7 @@
             {% set piece = p %}
           {% endif %}
         {% endfor %}
-        <div class="cell {% if piece %}{{ state.players[piece["player_id"]]["color"] }}{% endif %}">
+        <div class="cell {% if piece %}{{ state.players[piece['player_id']]['color'] }}{% endif %}">
           {% if not piece and not state.winner %}
             <form method="POST" action="{{ url_for('move') }}">
               <input type="hidden" name="x" value="{{ x }}">
